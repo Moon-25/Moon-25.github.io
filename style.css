@@ -6,18 +6,18 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #74ebd5, #9face6);
+  background: linear-gradient(to right, #078318, #47747c);
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(146, 21, 21, 0.079);
   backdrop-filter: blur(10px);
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   width: 350px;
   text-align: center;
-  color: #fff;
+  color: #eee7ed;
 }
 
 h1 {
@@ -36,9 +36,9 @@ input {
 }
 
 button {
-  padding: 10px 15px;
+  padding: 10px 5px;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;
@@ -49,18 +49,21 @@ button:hover {
 }
 
 #weather-card {
-  background: rgba(0,0,0,0.3);
-  padding: 20px;
+  background: rgba(101, 15, 15, 0.3);
+  padding:20px;
   border-radius: 15px;
   margin-top: 20px;
 }
 
 #favorites button {
-  background: #f1c40f;
+  background: #786723;
   color: #000;
   margin: 5px;
 }
 
 #favorites button:hover {
-  background: #d4ac0d;
+  background: #8a7521;
+}
+.hidden {
+  display: none;
 }
