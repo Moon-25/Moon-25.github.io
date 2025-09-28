@@ -12,7 +12,7 @@ const wind = document.getElementById("wind");
 const weatherCard = document.getElementById("weatherCard");
 const saveCityBtn = document.getElementById("saveCityBtn");
 const favoritesList = document.getElementById("favorites");
-
+const countryFlag = document.getElementById("countryFlag");
 let currentCity = "";
 
 // Get weather data
@@ -33,9 +33,22 @@ async function getWeather(city) {
       humidity.textContent = `💧 Humidity: ${data.main.humidity}%`;
       wind.textContent = `💨 Wind: ${data.wind.speed} m/s`;
 
+
+     
+
+// Set the flag image using the country code
+      countryFlag.src = `https://flagcdn.com/w80/${data.sys.country.toLowerCase()}.png`;
+      countryFlag.alt = data.sys.country + " Flag"; // optional, improves accessibility
+      countryFlag.classList.remove("hidden");
+
+
+
       // Weather icon
       const iconCode = data.weather[0].icon;
       weatherIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+      weatherIcon.classList.remove("hidden");
+
+
 
       weatherCard.classList.remove("hidden");
     } else {
