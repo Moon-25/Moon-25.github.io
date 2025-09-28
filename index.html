@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+
+    <!-- Search box -->
+    <div class="search">
+        <input type="text" id="city" placeholder="Enter city" />
+        <button id="getWeatherBtn">Get Weather</button>
+    </div>
+
+    <!-- Weather result -->
+    <div id="weatherCard" class="card hidden">
+        <h2 id="cityName"></h2>
+        <img id="weatherIcon" alt="Weather Icon" />
+        <p id="temp"></p>
+        <p id="desc"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+        <button id="saveCityBtn">⭐ Save to Favorites</button>
+    </div>
+
+    <!-- Favorites -->
+    <h2>Favorite Cities</h2>
+    <ul id="favorites"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
